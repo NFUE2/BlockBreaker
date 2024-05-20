@@ -7,10 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject ballPrefab;
     public Transform ballSpawn;
-    private int life = 3;
     public GameObject[] lifeSprites;
-
-    private GameObject currentBall;
+    private int life = 3;
 
     private void Start()
     {

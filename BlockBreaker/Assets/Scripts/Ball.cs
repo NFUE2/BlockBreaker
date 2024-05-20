@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    public GameManager gameManager;
+    private GameManager gameManager;
 
     private void Start()
     {
