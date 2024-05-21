@@ -22,7 +22,7 @@ public class Block : MonoBehaviour
         if(--blokenCount <= 0)
         {
             if(item != null) Instantiate(item);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

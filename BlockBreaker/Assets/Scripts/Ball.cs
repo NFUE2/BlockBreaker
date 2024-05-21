@@ -8,7 +8,7 @@ public class Ball : MonoBehaviour
     private GameManager gameManager;
     private Rigidbody2D rb;
 
-    private float speed = 10f;
+    private float speed = 6f;
 
     private void Start()
     {
