@@ -19,7 +19,6 @@ public class Ball : MonoBehaviour
 
     private void Update()
     {
-
         if (transform.position.y < -6f)
         {
             gameManager.Health();
