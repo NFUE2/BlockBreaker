@@ -5,27 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
+
     public GameObject ballPrefab;
     public Transform ballSpawn;
     public GameObject[] lifeSprites;
+    public List<GameObject> balls { get; set; }
     private int life = 3;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
+        balls = new List<GameObject>();
         SpawnBall();
     }
 
     private void SpawnBall()
     {
         //오브젝트, 위치, 회전
-        GameObject go = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        GameObject ball = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        balls.Add(ball);
         //Instantiate(ballPrefab, ballSpawn.position, Quaternion.identity);
     }
 
-    public void Health()
+    public void Health(GameObject ball)
     {
-        life--;
-        UpdateLife();
+        //life--;
+        balls.Remove(ball);
+
+        if(balls.Count == 0) UpdateLife();
 
         if(life <= 0 )
         {

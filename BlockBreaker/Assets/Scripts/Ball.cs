@@ -15,14 +15,13 @@ public class Ball : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = Vector2.down * speed;
-        Debug.Log(speed);
     }
 
     private void Update()
     {
         if (transform.position.y < -6f)
         {
-            gameManager.Health();
+            gameManager.Health(gameObject);
             Destroy(gameObject);
         }
     }

@@ -10,10 +10,11 @@ public class IncreseSize : Item
     {
         //FindBall();
 
-        //for(int i = 0; i < balls.Length; i++)
-        //{
-        //    GameObject ball = balls[i].gameObject;
-        //    ball.transform.localScale = size;
-        //}
+        List<GameObject> balls = GameManager.instance.balls;
+        for (int i = 0; i < balls.Count; i++)
+        {
+            GameObject ball = balls[i].gameObject;
+            ball.transform.localScale = size;
+        }
     }
 }

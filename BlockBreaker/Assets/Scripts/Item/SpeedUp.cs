@@ -8,11 +8,11 @@ public class SpeedUp : Item
 
     public override void Active()
     {
-        //FindBall();
-        //for(int i = 0; i < balls.Length; i++) //프리펩에 등록된 원본이 스피드가 빨라짐
-        //{
-        //    balls[i].speed = fixSpeed;
-        //    Debug.Log(balls[i]);
-        //}
+        List<GameObject> balls = GameManager.instance.balls;
+        for (int i = 0; i < balls.Count; i++)
+        {
+            Ball ball = balls[i].GetComponent<Ball>();
+            ball.speed = fixSpeed;
+        }
     }
 }
