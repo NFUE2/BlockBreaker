@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     private void SpawnBall()
     {
         //오브젝트, 위치, 회전
-        Instantiate(ballPrefab, ballSpawn.position, Quaternion.identity);
+        Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        //Instantiate(ballPrefab, ballSpawn.position, Quaternion.identity);
     }
 
     public void Health()
