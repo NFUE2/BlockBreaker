@@ -8,13 +8,14 @@ public class Ball : MonoBehaviour
     private GameManager gameManager;
     private Rigidbody2D rb;
 
-    private float speed = 7f;
+    public float speed;
 
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = Vector2.down * speed;
+        Debug.Log(speed);
     }
 
     private void Update()
