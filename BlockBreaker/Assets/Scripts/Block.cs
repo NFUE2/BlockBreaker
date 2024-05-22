@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Block : MonoBehaviour
 {
+    public int points = 10;
+
     //[SerializeField] BlockSO blockSO;
     enum Blokenable
     {
@@ -22,7 +25,9 @@ public class Block : MonoBehaviour
         if(--blokenCount <= 0)
         {
             if(item != null) Instantiate(item);
+            GameManager.instance.AddScore(points);
             gameObject.SetActive(false);
         }
     }
+
 }
