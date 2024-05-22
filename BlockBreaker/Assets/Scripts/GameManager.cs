@@ -98,7 +98,11 @@ public class GameManager : MonoBehaviour
         //life--;
         balls.Remove(ball);
 
-        if(balls.Count == 0) UpdateLife();
+        if(balls.Count == 0)
+        {
+            life--;
+            UpdateLife();
+        }
 
         if (life <= 0)
         {
