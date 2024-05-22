@@ -16,7 +16,10 @@
 > ### 4. 개발 환경
 - Unity, C#
 
-> ### 5. 기능 구현
+> ### 5. UML
+<img width="390" alt="스크린샷 2024-05-22 175820" src="https://github.com/NFUE2/BlockBreaker/assets/130882236/00713989-2e5f-4848-91c3-b018345c9574">
+
+> ### 6. 기능 구현
 - 📜[Ball.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/Ball.cs)
 - 📜[Block.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/Block.cs)
 - 📜[GameManager.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/GameManager.cs)
@@ -31,5 +34,4 @@
 - 📜[Item.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/Item/Item.cs)
 - 📜[SpeedUp.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/Item/SpeedUp.cs)
 
-> ### 6. UML
-<img width="390" alt="스크린샷 2024-05-22 175820" src="https://github.com/NFUE2/BlockBreaker/assets/130882236/00713989-2e5f-4848-91c3-b018345c9574">
+
