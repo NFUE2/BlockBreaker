@@ -25,7 +25,11 @@
 - 📜[StartBtn.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/StartBtn.cs)
 - 📜[StartButton.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/StartButton.cs)
 
+아이템 기능
 - 📜[CreateBall.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/Item/CreateBall.cs)
 - 📜[IncreseSize.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/Item/IncreseSize.cs)
 - 📜[Item.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/Item/Item.cs)
 - 📜[SpeedUp.cs](https://github.com/NFUE2/BlockBreaker/blob/main/BlockBreaker/Assets/Scripts/Item/SpeedUp.cs)
+
+> ### 6. UML
+<img width="390" alt="스크린샷 2024-05-22 175820" src="https://github.com/NFUE2/BlockBreaker/assets/130882236/00713989-2e5f-4848-91c3-b018345c9574">
