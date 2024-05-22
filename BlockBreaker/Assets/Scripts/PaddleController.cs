@@ -1,26 +1,14 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 
 public class PaddleController : MonoBehaviour
 {
-    [SerializeField] float speed = 10f;
+    public event Action<Vector2> OnMoveEvent;
 
-    Vector2 direction;
-    Rigidbody2D rigidbody;
-
-    private void Awake()
+    public void CallMoveEvent(Vector2 direction)
     {
-        rigidbody = GetComponent<Rigidbody2D>();
-    }
-
-    private void OnMove(InputValue value)
-    {
-        direction = value.Get<Vector2>().normalized;
-    }
-
-    private void FixedUpdate()
-    {
-        rigidbody.velocity = direction * speed;
+        OnMoveEvent?.Invoke(direction);
     }
 }
